@@ -1,0 +1,31 @@
+# Read the input dataset...
+# Estimate the dev+test size:
+# size 10480 => 760 unseen & 0.269212 unseen ratio
+# size 5240 => 316 unseen & 0.223289 unseen ratio
+# size 7860 => 512 unseen & 0.240545 unseen ratio
+# size 6550 => 411 unseen & 0.231673 unseen ratio
+# size 5895 => 364 unseen & 0.227642 unseen ratio
+# size 6222 => 382 unseen & 0.228254 unseen ratio
+# size 6386 => 396 unseen & 0.230621 unseen ratio
+# size 6468 => 404 unseen & 0.230740 unseen ratio
+# size 6427 => 402 unseen & 0.231732 unseen ratio
+# size 6406 => 396 unseen & 0.229075 unseen ratio
+# size 6416 => 396 unseen & 0.228582 unseen ratio
+# size 6421 => 400 unseen & 0.231326 unseen ratio
+# Find the right split...
+# Number of sentences
+Train size: 14540
+Dev size: 1580
+Test size: 4841
+# Train
+Number of MWEs in train: 3921
+# Dev
+Number of MWEs in dev: 437
+Number of unseen MWEs in dev: 100
+Unseen/all MWE ratio in dev: 0.2288329519450801
+# Test
+Number of MWEs in test: 1297
+Number of unseen MWEs in test w.r.t train: 300
+Unseen/all MWE ratio in test w.r.t train: 0.2313030069390902
+Number of unseen MWEs in test w.r.t train+dev: 284
+Unseen/all MWE ratio in test w.r.t train+dev: 0.2189668465690054

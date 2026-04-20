@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grammar-extract"
+version = "0.1.0"
+description = "Analyze French sentences with Stanza and emit the full parse as JSON."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "stanza>=1.8.2",
+]
+
+[project.optional-dependencies]
+trankit = [
+  "trankit>=1.1.2",
+]
+spacy = [
+  "spacy>=3.7",
+]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+grammar-extract = "grammar_extract.cli:main"
+trankit-idea-report = "grammar_extract.trankit_report:main"
+spacy-idea-report = "grammar_extract.spacy_report:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "integration: tests that run the real Stanza pipeline and may download language models",
+]
