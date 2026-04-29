@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-04-29T17:32:52.508936+00:00",
+  "config": "config.json",
+  "prompt": "tell me a joke",
+  "results": [
+    {
+      "model": "gemini-3.1-flash-lite-preview",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 6.395,
+      "reply": "Why don't scientists trust atoms?\n\nBecause they make up everything!",
+      "error": null
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.861,
+      "reply": null,
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "model": "gemini-3-flash-preview",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 2.827,
+      "reply": "Why did the scarecrow win an award?\n\nBecause he was outstanding in his field!",
+      "error": null
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 3.831,
+      "reply": null,
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "model": "Gemma-3-1B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.062,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    {
+      "model": "Gemma-3-2B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.057,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    {
+      "model": "Gemma-3-4B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.058,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    {
+      "model": "Gemma-3-12B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.062,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    {
+      "model": "Gemma-3-27B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.065,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    {
+      "model": "Gemma-4-26B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.056,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    {
+      "model": "Gemma-4-31B",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.056,
+      "reply": null,
+      "error": "ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\\n', 'status': 'INVALID_ARGUMENT'}}"
+    }
+  ]
+}

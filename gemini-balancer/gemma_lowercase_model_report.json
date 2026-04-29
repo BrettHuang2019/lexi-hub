@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-04-29T18:04:03.910043+00:00",
+  "config": "config.json",
+  "filter": "configured model starts with Gemma/gemma",
+  "model_name_pattern": "lowercase configured model name",
+  "prompt": "tell me a joke",
+  "results": [
+    {
+      "configured_model": "Gemma-3-1B-it",
+      "request_model": "gemma-3-1b-it",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 0.72,
+      "reply": "Why don\u2019t scientists trust atoms? \n\nBecause they make up everything! \n\n---\n\nWould you like to hear another one? \ud83d\ude0a",
+      "error": null
+    },
+    {
+      "configured_model": "Gemma-3-2B-it",
+      "request_model": "gemma-3-2b-it",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.084,
+      "reply": null,
+      "error": "ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-2b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+    },
+    {
+      "configured_model": "Gemma-3-4B-it",
+      "request_model": "gemma-3-4b-it",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 1.235,
+      "reply": "Why did the scarecrow win an award? \n\n... Because he was outstanding in his field! \ud83d\ude04 \n\n---\n\nWould you like to hear another one?",
+      "error": null
+    },
+    {
+      "configured_model": "Gemma-3-12B-it",
+      "request_model": "gemma-3-12b-it",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 22.093,
+      "reply": "Why don't scientists trust atoms?\n\nBecause they make up everything! \ud83d\ude02\n\n\n\nHope that gave you a chuckle! \ud83d\ude0a",
+      "error": null
+    },
+    {
+      "configured_model": "Gemma-3-27B-it",
+      "request_model": "gemma-3-27b-it",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 1.374,
+      "reply": "Why don't skeletons fight each other?\n\n...They don't have the guts! \n\n\ud83d\ude02 \n\nHope that gave you a little chuckle! Would you like to hear another one?",
+      "error": null
+    },
+    {
+      "configured_model": "Gemma-4-26B-it",
+      "request_model": "gemma-4-26b-it",
+      "prompt": "tell me a joke",
+      "ok": false,
+      "duration_seconds": 0.075,
+      "reply": null,
+      "error": "ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-4-26b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+    },
+    {
+      "configured_model": "Gemma-4-31B-it",
+      "request_model": "gemma-4-31b-it",
+      "prompt": "tell me a joke",
+      "ok": true,
+      "duration_seconds": 10.355,
+      "reply": "Why don't scientists trust atoms?\n\nBecause they make up everything!",
+      "error": null
+    }
+  ]
+}
