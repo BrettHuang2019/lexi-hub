@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from collections.abc import Callable
+from pathlib import Path
 from typing import Any
 
 from grammar_extract.analyzer import FrenchAnalyzer
@@ -105,6 +106,47 @@ def generate_sample_report(
         )
 
     return "\n".join(sections)
+
+
+def generate_sentence_file_raw_report(
+    sentence_path: Path,
+    *,
+    analyzer: FrenchAnalyzer | None = None,
+    title: str | None = None,
+) -> str:
+    analyzer = analyzer or FrenchAnalyzer(processors="tokenize,mwt,pos,lemma,depparse", download=True)
+    sentences = read_sentence_file(sentence_path)
+    display_path = sentence_path.as_posix()
+
+    sections = [
+        f"# {title or 'French Stanza Raw JSON Report'}",
+        "",
+        f"Generated from real Stanza `Document.to_dict()` output using `{display_path}`.",
+        "",
+    ]
+
+    for index, sentence in enumerate(sentences, start=1):
+        result = analyzer.analyze(sentence)
+        sections.extend(
+            [
+                f"## {index}. Sentence",
+                "",
+                f"Sentence: {sentence}",
+                "",
+                "Raw Stanza output:",
+                "",
+                "```json",
+                json.dumps(result, ensure_ascii=False, indent=2),
+                "```",
+                "",
+            ]
+        )
+
+    return "\n".join(sections)
+
+
+def read_sentence_file(path: Path) -> list[str]:
+    return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
 def flatten_words(stanza_result: Any) -> list[dict[str, Any]]:
